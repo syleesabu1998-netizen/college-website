@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile Portal</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Sree narayana college varkala</h1>
+        <p>Learn Today | Build Tomorrow</p>
+        <hr>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index2.html">Home</a>
+        <a href="#student">Student Profile</a>
+        <a href="#education">Education</a>
+        <a href="#registration">Registration</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+
+        <!-- Student Information -->
+        <section id="student" class="card">
+            <h2>Student Information</h2>
+
+            <div class="student-info">
+
+                <div>
+                    <img src="student1.jpg"
+                         alt="Student Profile Photo"
+                         width="200"
+                         height="200">
+                    <p><b>My Journey, My Dreams</b></p>
+                </div>
+
+                <article>
+                    <p>
+                        <b>Name:</b> Sylee Sabu
+                    </p>
+
+                    <p>
+                        <strong>Course:</strong> Bachelor of Science in Chemistry
+                    </p>
+
+                    <p>
+                        <i>College:</i> Sree narayana college varkala
+                    </p>
+
+                    <p>
+                        <em>Year:</em> 2019
+                    </p>
+
+                    <p>
+                        Hi! I am <u>Sylee Sabu</u>, a passionate and
+                        hardworking student with a strong interest in
+                        <i>technology, coding</i> and creating useful
+                        solutions.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Two Column Section -->
+        <div class="two-column">
+
+            <!-- Skills -->
+            <section class="card">
+                <h2>Technical Skills</h2>
+
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>computer hardware</li>
+                    <li> practical knowledge in chemistry</li>
+                    <li>theorectical knowledge in chemistry</li>
+                    
+                </ul>
+            </section>
+
+<section class="card">
+    <h2>Education</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Student ID</th>
+            <th>Course</th>
+            <th>College</th>
+            <th>Year</th>
+            <th>Percentage</th>
+        </tr>
+
+        <tr>
+            <td>GVIT001</td>
+            <td>Bachelor of Science in Chemistry</td>
+            <td>Sree Narayana College Varkala</td>
+            <td>2019</td>
+            <td>80%</td>
+        </tr>
+
+        <tr>
+            <td>GVIT002</td>
+            <td>Higher Secondary</td>
+            <td>Govt. Higher Secondary School</td>
+            <td>2016</td>
+            <td>86%</td>
+        </tr>
+
+        <tr>
+            <td>GVIT003</td>
+            <td>SSLC</td>
+            <td>St. Mary's High School</td>
+            <td>2014</td>
+            <td>95%</td>
+        </tr>
+    </table>
+</section>
+
+        <!-- Hobbies and Links -->
+        <div class="two-column">
+
+            <!-- Hobbies -->
+            <section class="card">
+                <h2>Hobbies</h2>
+
+                <ol>
+                    <li>Reading Books</li>
+                    <li>Listening to Music</li>
+                    <li>Travelling</li>
+                    <li>Photography</li>
+                </ol>
+            </section>
+
+
+            <!-- Useful Links -->
+            <section class="card">
+                <h2>Useful Links</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://github.com"
+                           target="_blank">
+                            GitHub (Open in new tab)
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com"
+                           target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.google.com">
+                            Google
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Student Registration Form -->
+        <section id="registration" class="card">
+            <h2>Student Registration Form</h2>
+
+            <form>
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter your password"
+                       required>
+
+
+                <!-- Age -->
+                <label for="age">Age:</label>
+                <input type="number"
+                       id="age"
+                       name="age"
+                       min="1"
+                       max="100"
+                       required>
+
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       required>
+
+
+                <!-- Gender -->
+                <p><strong>Gender:</strong></p>
+
+                <input type="radio"
+                       id="female"
+                       name="gender"
+                       value="female">
+
+                <label for="female">Female</label>
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="male">
+
+                <label for="male">Male</label>
+
+                <input type="radio"
+                       id="other"
+                       name="gender"
+                       value="other">
+
+                <label for="other">Other</label>
+
+
+                <!-- Course -->
+                <label for="course">Course:</label>
+
+                <select id="course"
+                        name="course"
+                        required>
+
+                    <option value="">Select Course</option>
+                    <option value="bca">BCA</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="mca">MCA</option>
+                    <option value="mtech">M.Tech</option>
+
+                </select>
+
+
+                <!-- Skills -->
+                <p><strong>Skills:</strong></p>
+
+                <input type="checkbox"
+                       id="html"
+                       name="skills"
+                       value="html">
+
+                <label for="html">HTML</label>
+
+                <input type="checkbox"
+                       id="css"
+                       name="skills"
+                       value="css">
+
+                <label for="css">CSS</label>
+
+                <input type="checkbox"
+                       id="javascript"
+                       name="skills"
+                       value="javascript">
+
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox"
+                       id="python"
+                       name="skills"
+                       value="python">
+
+                <label for="python">Python</label>
+
+                <input type="checkbox"
+                       id="java"
+                       name="skills"
+                       value="java">
+
+                <label for="java">Java</label>
+
+
+                <!-- File -->
+                <label for="photo">Upload Photo:</label>
+
+                <input type="file"
+                       id="photo"
+                       name="photo"
+                       accept="image/*">
+
+
+                <!-- Address -->
+                <label for="address">Address:</label>
+
+                <textarea id="address"
+                          name="address"
+                          rows="4"
+                          placeholder="Enter your address"
+                          required></textarea>
+
+
+                <!-- City -->
+                <label for="city">City:</label>
+
+                <input type="text"
+                       id="city"
+                       name="city"
+                       placeholder="Enter city"
+                       required>
+
+
+                <!-- State -->
+                <label for="state">State:</label>
+
+                <input type="text"
+                       id="state"
+                       name="state"
+                       placeholder="Enter state"
+                       required>
+
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <input type="submit"
+                           value="Submit">
+
+                    <input type="reset"
+                           value="Reset">
+
+                </div>
+
+            </form>
+        </section>
+
+<section class="card">
+    <h2>Media</h2>
+
+    <!-- Audio -->
+    <h3>Sree Narayana Guru Devotional Song</h3>
+
+    <audio controls>
+        <source src="narayanamoorthe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- College Video -->
+    <h3>Sree Narayana College Varkala</h3>
+
+    <video controls>
+        <source src="SREE NARAYANA COLLEGE,SIVAGIRI,VARKALA.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <h2>Sree Narayana College Varkala</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/5_nkygittlY"
+        title="Sree Narayana College Varkala"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+        </section>
+
+
+        <!-- College Location -->
+        <section class="card">
+
+            <h2>Our College Location</h2>
+<iframe
+    src="https://www.google.com/maps?q=8.74532,76.73361&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy">
+</iframe>
+
+        </section>
+
+
+        <!-- About College -->
+        <section id="about" class="card">
+            <h2>About Our College</h2>
+
+            <p>
+                Envisioned by the philosophic and the futuristic vision of the great saint Sree Narayana Guru, the Sree Narayana College, Sivagiri, Varkala was established in 1964. The College is affiliated to University of Kerala and Ever since the inception, the institution has made an indelible impression in the realm of higher education in Kerala. Sree Narayana Guru in whose name the college stands was one of the greatest social reformers and spiritual leaders who stood for social liberation through education. The message of social “Liberation through Education” was translated to a reality when Sri. R. Sankar, one of the prominent followers of the Guru laid the foundation of Sree Narayana College upon the serene hills of Sivagiri. Situated in the lofty hill tops of Sivagiri, this institution has been continuing its mission as an inspirational source of knowledge for the last 56 years.
+            </p>
+
+            <a href="about.html" class="button">
+                Learn More
+            </a>
+
+        </section>
+
+
+        <!-- HTML Comment -->
+        <!--
+            This is an HTML comment.
+            It will not be displayed on the webpage.
+        -->
+
+    </main>
+
+    <footer>
+        <p>
+            Sree Narayana College, Sivagiri, Varkala<br>
+            info@gvit.edu.in<br>
+            &copy; 2026 All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
